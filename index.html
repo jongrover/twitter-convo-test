@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twitter Convo Test</title>
+</head>
+<body>
+  <style>
+    .chat-box { width: 460px; border: 1px solid #ccc; border-radius: 3px; }
+  </style>
+  <div class="chat-box">
+    <a class="twitter-timeline"
+       href="https://twitter.com/hashtag/StrangerThings"
+       data-widget-id="777721565228195840"
+       data-chrome="noheader nofooter">
+    Loading..</a><a class="twitter-hashtag-button"
+       href="https://twitter.com/intent/tweet?button_hashtag=StrangerThings">.</a>
+  </div>
+  <script>
+    !function(d,s,id){
+      var js,fjs=d.getElementsByTagName(s)[0],
+          p=/^http:/.test(d.location)?'http':'https';
+      if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src=p+"://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document,"script","twitter-wjs");
+  </script>
+</body>
+</html>
